@@ -1,0 +1,52 @@
+Evaluation and selection of potential sites for development of an inland terminal in the hinterland of Port Burgas
+(surveys and preparation of preliminary design)
+
+
+1.	Evaluation and selection of potential sites
+
+	Analysis of the potential traffic flows of the future inland terminal;
+	Mapping of required capacities (land, infrastructure, superstructure)
+	Assessment of different land plots
+
+2.	Preparatory activities (surveys)
+
+	Geodetic survey and plotting the territory of the future inland terminal;
+	Geodetic plotting of the railway and road connections to the future inland terminal;
+	Engineering geological and hydro geological survey;
+	Survey of the electricity supply to the future inland terminal;
+	Survey of the water supply to the future inland terminal;
+	Survey of the waste water discharge;
+	Appraisal if EIA is required.
+
+3.	Design  (Preliminary Design)
+
+	Technology of the loading and unloading processes;
+	Internal railway lines;
+	Open storage areas;
+	Sub-crane roads for the handling mechanizaton;
+	Internal road connections;
+	Covered warehouses for containerization and decontainerization:
+-	Part „Architecture“;
+-	Part „Constructions“;
+-	Part “Electricity supply“;
+-	Part „Water supply, sewerage and drainage system“;
+-	Part „Heating and ventilation system“;
+	 Administrative building:
+-	Part „Architecture“;
+-	Part „Constructions“;
+-	Part “Electricity supply“;
+-	Part „Water supply, severage and drainage system“;
+-	Part „Heating and ventilation system“;
+	 Electricity supply of the inland terminal:
+-	External electricity supply;
+-	Construction of transformer station;
+-	Cable network “Low voltage”;
+-	Lightening of the inland terminal area;
+	 Water supply, savage and drainage system:
+-	External water supply, savage and drainage system;
+-	Water – pipe  and savage and drainage system within the inland terminal area;
+-	Sewerage facility;
+-	Firefighting water tank;
+	Landscaping and pavements on the inland terminal area;
+	Fencing;
+	Fire Safety.

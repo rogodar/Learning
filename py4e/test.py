@@ -1,0 +1,6 @@
+test = input("What is your number: ")
+test = int(test)
+test2 = input("whats your second number: ")
+test2 = int(test2)
+equas = (test * test2)
+print(equas)
