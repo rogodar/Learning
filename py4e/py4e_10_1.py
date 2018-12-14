@@ -44,9 +44,9 @@ for line in fhand:
         counts[word] = counts.get(word, 0) + 1
 
 lst = list()
-for key,val in counts.items()
-   print(key,' : ',val)
-    newtup = (key, val)
-    lst.append(newtup)
+for key,val in counts.items():
+        print(key,' : ',val)
+        newtup = (key, val)
+        lst.append(newtup)
 lst = sorted(lst)
 print(lst)
