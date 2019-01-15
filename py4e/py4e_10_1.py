@@ -36,13 +36,28 @@
 # # lst = sorted(lst)
 # # print(lst)
 
+<<<<<<< HEAD
+fhand = open("D:\WWW\Learning\py4e\clown.txt")
+=======
 fhand = open('E:\Learning\WEB\Learning\py4e\mbox-short.txt')
+>>>>>>> 7e50da4d825fd8f6c4d9aa19f3cd7dcf5e1fe08c
 counts = dict()
 for line in fhand:
     words = line.split()
     for word in words:
         counts[word] = counts.get(word, 0) + 1
 
+<<<<<<< HEAD
+lst = list()                            #       Shorter version for these lines:
+for key,val in counts.items():          #       print(sorted([(v, k) for k, v in counts.items()]))
+    newtup = (val, key)                 #
+    lst.append(newtup)                  #
+
+lst = sorted(lst, reverse=True)         #
+for val, key in lst:                    #
+        print(key,val)                  #
+
+=======
 lst = list()
 for key,val in counts.items():
         print(key,' : ',val)
@@ -50,3 +65,4 @@ for key,val in counts.items():
         lst.append(newtup)
 lst = sorted(lst)
 print(lst)
+>>>>>>> 7e50da4d825fd8f6c4d9aa19f3cd7dcf5e1fe08c
