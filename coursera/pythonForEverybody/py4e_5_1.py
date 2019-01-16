@@ -25,3 +25,29 @@
 #     print(count, sum, value)
 # print('After :', count, sum, sum / count)
 
+largest = None
+smallest = None
+while True:
+    num = input("Enter a number: ")
+    if num == "done" : break
+    print(num)
+    
+    try:
+        fnum = int(num)
+        # for lvolue in fnum :
+        if largest is None:
+            largest = fnum
+        elif fnum > largest:
+            largest = fnum
+        # for svolue in fnum :
+        if smallest is None:
+            smallest = fnum
+        elif fnum < smallest:
+            smallest = fnum
+        
+    except:
+        print('bad input')
+        continue
+print('Minimum', smallest)
+print("Maximum", largest)
+# print(fnum)
