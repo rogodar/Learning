@@ -1,10 +1,13 @@
 import re
-fhand = open('D:\WWW\Learning\coursera\PythonAWD\regex_sum_148678.txt')
-numlist = list()
-for line in fhand:
-    line = line.rstrip()
-    numex = re.findall('', line)
-    num = int(numex[0])
-    numlist.append(num)
 
-print('The sum is : ', sum(numlist))
+file = open('D:\WWW\Learning\coursera\PythonAWD\\regex_sum_148678.txt')
+numlist = list()
+
+for line in file:
+    line = line.rstrip()
+    line = re.findall('([0-9]+)', line)
+    for i in line:
+        i = int(i)
+        numlist.append(i)
+
+print(sum(numlist))
