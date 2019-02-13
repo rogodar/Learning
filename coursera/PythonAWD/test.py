@@ -1,18 +1,43 @@
-import urllib.request, urllib.parse, urllib.error
-import xml.etree.ElementTree as ET 
+import urllib.request
+import urllib.parse
+import urllib.error
+import json
+import ssl
 
-url = input('Enter adress: ')
-print('Processing :', url)
+api_key = False
 
-x = 0
-code = urllib.request.urlopen(url).read()
-print('Retrieved: ', len(code))
-tree = ET.fromstring(code)
-count = tree.findall('.//name')
-print('Number of numbers: ', len(count))
+if api_key is False:
+    api_key = 42
+    serviceurl = 'http://py4e-data.dr-chuck.net/json?'
+else:
+    serviceurl = 'https://maps.googleapis.com/maps/api/geocode/json?'
 
-for counts in count:
-    element = counts.text
-    print(element)
-    # x += int(element)
-# print(x)
+# Ignore SSL certificate errors
+ctx = ssl.create_default_context()
+ctx.check_hostname = False
+ctx.verify_mode = ssl.CERT_NONE
+
+while True:
+    address = input('Enter location: ')
+    if len(address) < 1:
+        break
+
+    parms = dict()
+    parms['address'] = address
+    if api_key is not False:
+        parms['key'] = api_key
+    url = serviceurl + urllib.parse.urlencode(parms)
+
+    print('Retrieving', url)
+    uh = urllib.request.urlopen(url, context=ctx)
+    data = uh.read().decode()
+    print('Retrieved', len(data), 'characters')
+
+    try:
+        js = json.loads(data)
+    except:
+        js = None
+
+  
+    location = js['results'][0]['place_id']
+    print(location)
