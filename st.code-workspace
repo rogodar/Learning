@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": ".",
+			"name": "Learning"
+		},
+		{
+			"path": "D:\\WWW\\STAR777",
+			"name": "STAR777"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Learning"
+	}
+}
